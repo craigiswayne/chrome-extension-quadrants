@@ -1,0 +1,34 @@
+:root {
+    --chrome-extension-quadrants-line-thickness: 5px;
+}
+
+.chrome-extension-quadrants {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1001;
+}
+
+.chrome-extension-quadrants:before {
+    width: var(--chrome-extension-quadrants-line-thickness);
+    background: red;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content:  "";
+    transform: translate(-50%,0);
+}
+
+.chrome-extension-quadrants:after {
+    height: var(--chrome-extension-quadrants-line-thickness);
+    background: red;
+    width:100vw;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content:  "";
+    transform: translate(0,-50%);
+}

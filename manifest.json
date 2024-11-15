@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Quadrants",
+  "version": "0.0.20",
+  "description": "Displays a quadrant overlay on your site",
+  "permissions": [ "activeTab", "scripting" ],
+  "action": {
+    "default_title": "Display quadrants",
+    "default_icon": {
+      "16": "assets/icon_16.png",
+      "48": "assets/icon_48.png"
+    }
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "icons": {
+    "128": "assets/icon_128.png",
+    "16": "assets/icon_16.png",
+    "48": "assets/icon_48.png"
+  }
+}
