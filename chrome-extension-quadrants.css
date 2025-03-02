@@ -11,24 +11,22 @@
     z-index: 1001;
 }
 
-.chrome-extension-quadrants:before {
-    width: var(--chrome-extension-quadrants-line-thickness);
-    background: red;
-    height: 100vh;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    content:  "";
-    transform: translate(-50%,0);
+.line {
+    --percent: 0;
+    position: fixed;
+    background: rgba(255,255,0,0.25);
 }
 
-.chrome-extension-quadrants:after {
-    height: var(--chrome-extension-quadrants-line-thickness);
-    background: red;
-    width:100vw;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    content:  "";
-    transform: translate(0,-50%);
+.vertical.line {
+    width: 1px;
+    height: 100%;
+    left: var(--percent);
+    transform: translateX(-50%);
+}
+
+.horizontal.line {
+    height: 1px;
+    width: 100%;
+    top: var(--percent);
+    transform: translateY(-50%);
 }
